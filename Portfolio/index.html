@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div class="profile">
+                <img src="images/nagesh.jpg" alt="Profile pic">
+            </div>
+            <div class="dev">Nagesh Rathore</div>
+            <div class="web">Web Developer</div>
+            <div class="line"></div>
+            <div class="long">
+                <div class="contact-info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>0221ite281@niet.co.in</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(+91)9319372239</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>January 23, 2002</span>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>New Delhi,India </span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.github.com" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="sect">About Me</div>
+                <div class="nav">
+                    <ul>
+                        <li class="link" data-target="about" data-title="About Me">About</li>
+                        <li class="link" data-target="education" data-title="Education">Education</li>
+                        <li class="link" data-target="projects" data-title="Projects">Projects</li>
+                        <li class="link" data-target="skills" data-title="Skills">Skills</li>
+                        <li class="link" data-target="contact" data-title="Contact Me">Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mid">
+                <div id="about">
+                    <p>I am a passionate web developer crafting dynamic and responsive websites. Skilled in HTML, CSS,
+                        JavaScript, and frameworks like React.</p>
+                    <p>I thrive on transforming complex requirements into user-friendly digital solutions. My background
+                        in both front-end and back-end development allows me to create seamless, full-stack
+                        applications. With a keen eye for detail and a commitment to clean code, I continuously seek out
+                        the latest technologies to enhance my projects and deliver exceptional user experiences.</p>
+                    <span class="what">What I'm Doing!!</span>
+                    <div class="doing">
+                        <div class="div">
+                            <i class="fas fa-laptop-code icon"></i>
+                            <div class="text">
+                                Web Development
+                                <span class="sp">Building and maintaining websites</span>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <i class="fas fa-code icon"></i>
+                            <div class="text">
+                                DSA
+                                <span class="sp">Data Structures and Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="education">
+                    <div class="education-section">
+                        <div class="education-header">
+                            <span class="dot"></span>
+                            <h3>Noida Institute of Engineering and Technology</h3>
+                        </div>
+                        <div class="education-description">
+                            <p>B.Tech(Information Technology)</p>
+                            <p>2022-2026</p>
+                        </div>
+                    </div>
+                
+                    <div class="education-section">
+                        <div class="education-header">
+                            <span class="dot"></span>
+                            <h3>SD Public School</h3>
+                        </div>
+                        <div class="education-description">
+                            <p>Senior Secondary</p>
+
+                            <p>CGPA-8.8</p>
+                            <p>2020-2021</p>
+                        </div>
+                    </div>
+                
+                    <div class="education-section">
+                        <div class="education-header">
+                            <span class="dot"></span>
+                            <h3>SD Public School</h3>
+                        </div>
+                        <div class="education-description">
+                            <p>High School</p>
+
+                            <p>CGPA-9.0</p>
+                            <p>2018-2019</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="projects">
+                    <div class="nav11">
+                        <button class="tablink" onclick="openTab(event, 'all')">All</button>
+                        <button class="tablink" onclick="openTab(event, 'frontend')">Web Projects</button>
+                        <button class="tablink" onclick="openTab(event, 'games')">Games</button>
+                        <button class="tablink" onclick="openTab(event, 'python')">Python Projects</button>
+                    </div>
+            
+                    <div id="all" class="tabcontent">
+                        
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Rapid-keys')"><img src="images/rapid.png" alt="Rapid Keys"><p>Rapid Keys</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Signature-App')"><img src="images/sign.png" alt="Signature"><p>Your Sign</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Expense-Tracker')"><img src="images/expense.png" alt="Expense tracker"><p>Expense Tracker</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Stopwatch')"><img src="images/stopwatch.png" alt="StopWatch"><p>StopWatch</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/GYM-Webiste')"><img src="images/gym.png" alt="Gym Layout"><p>Gym Layout</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Weather-App')"><img src="images/weather.png" alt="Weather App"><p>Weather App</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Netflix-clone')"><img src="images/net - Copy.webp" alt="Netflix"><p>Netflix Clone</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/tic-tac-toe')"><img src="images/tic - Copy.png" alt="tictactoe"><p>Tic Tac Toe</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/HIt_the_number')"><img src="images/hit - Copy.png" alt="Hit the number"><p>Hit The Number</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Stone-paper-scissor')"><img src="images/stone - Copy.webp" alt="Stonepaperscissor"><p>Stone Paper Scissor</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/password_generator')"><img src="images/pswrd.webp" alt="Password password_generator"><p>password Generator</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/to_do_list')"><img src="images/todo - Copy.jpeg" alt="todolist"><p>To Do List</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/calculator')"><img src="images/cal.jpeg" alt="calculator"><p>Calculator</p></div>
+
+
+                    </div>
+            
+                    <div id="frontend" class="tabcontent">
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Stopwatch')"><img src="images/stopwatch.png" alt="StopWatch"><p>StopWatch</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/GYM-Webiste')"><img src="images/gym.png" alt="Gym Layout"><p>Gym Layout</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Weather-App')"><img src="images/weather.png" alt="Weather App"><p>Weather App</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Rapid-keys')"><img src="images/rapid.png" alt="Rapid Keys"><p>Rapid Keys</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Signature-App')"><img src="images/sign.png" alt="Signature"><p>Your Sign</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Expense-Tracker')"><img src="images/expense.png" alt="Expense tracker"><p>Expense Tracker</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Netflix-clone')"><img src="images/net - Copy.webp" alt="Netflix"><p>Netflix Clone</p></div>
+                    </div>
+            
+                    <div id="games" class="tabcontent">
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/tic-tac-toe')"><img src="images/tic - Copy.png" alt="tictactoe"><p>Tic Taac Toe</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/HIt_the_number')"><img src="images/hit - Copy.png" alt="Hit the number"><p>Hit The Number</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/Stone-paper-scissor')"><img src="images/stone - Copy.webp" alt="Stonepaperscissor"><p>Stone Paper Scissor</p></div>
+                    </div>
+            
+                    <div id="python" class="tabcontent">
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/password_generator')"><img src="images/pswrd.webp" alt="Password password_generator"><p>password Generator</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/to_do_list')"><img src="images/todo - Copy.jpeg" alt="todolist"><p>To Do List</p></div>
+                        <div class="card" onclick="window.open('https://github.com/NageshRathore/calculator')"><img src="images/cal.jpeg" alt="calculator"><p>Calculator</p></div>
+                    </div>
+                </div>
+                <div id="skills">
+                    <span class="animate">Web Development</span>
+
+                    <div class="webd">
+                        <div class="card"><i class="fab fa-html5"></i> HTML</div>
+                        <div class="card"><i class="fab fa-css3-alt"></i> CSS</div>
+                        <div class="card"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="card"><i class="fab fa-react"></i> React</div>
+                        <div class="card"><i class="fas fa-database"></i> MongoDB</div>
+                        <div class="card"><i class="fab fa-node-js"></i> Node.js</div>
+                    </div>
+                    <span class="animate">Languages</span>
+
+                    <div class="lang">
+                        <div class="card"><i class="fab fa-java"></i> Java</div>
+                        <div class="card"><i class="fab fa-python"></i> Python</div>
+                    </div>
+                </div>
+                 <div id="contact">
+
+                    <form id="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit" id="sub">Send Message</button>
+                    </form>
+                </div> 
+                
+                <div class="bottom"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
